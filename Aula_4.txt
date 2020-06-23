@@ -1,0 +1,328 @@
+    1  git config --global user.name "Karen Gallardo"
+    2  git config --global user.email "karen.gallardo.ochoa@gmail.com"
+    3  git config user.name
+    4  git config user.email
+    5  cd Desktop/
+    6  mkdir Curso_Git
+    7  cd Curso_Git/
+    8  git init
+    9  git status
+   10  echo "#Aprendendo usar o Git" > readme.md
+   11  git status
+   12  git add readme.md
+   13  git status
+   14  git commit -m "Commit inicial"
+   15  git status
+   16    echo "##Aula1! >> readme.md
+   17    echo "##Aula1!" >> readme.md
+   18  echo "##Aula1!" >> readme.md
+   19  echo '##Aula1' >> readme.md
+   20  git status
+   21  echo '##Aula1!' >> readme.md
+   22  <
+   23  Clear 7
+   24  echo '##Aula1' >> readme.md
+   25  git status
+   26  echo'Karen Gallardo' > participantes.txt
+   27  echo 'Karen Gallardo' > participantes.txt
+   28  git status 
+   29  git add .
+   30  git status
+   31  git restore --staged participantes.txt
+   32  git status
+   33  git add participantes.txt
+   34  git status
+   35  git restore --staged .
+   36  git status
+   37  git commit -am 'Alteracion en readme'
+   38  git status
+   39  git add participantes.txt
+   40  git status
+   41  git commit -m 'Adicionado participante.txt'
+   42  history > Aula_3.txt
+   43  git status
+   44  git add.
+   45  git commit -m 'Comandos da Aula 3'
+   46  git commit -m 'Comandos da Aula 3'
+   47  git add .
+   48  git commit -m 'Comandos da Aula 3'
+   49  git status
+   50  ggit log
+   51  git log
+   52  cd desktop
+   53  git log
+   54  git status
+   55    git log --pretty=online
+   56  cd Curso_Git/
+   57  git status
+   58  git log --pretty=oneline
+   59  git log --stat
+   60  git log -p
+   61  git log --pretty=oneline -2
+   62  git log --since=2.minutes
+   63  git log --since=1.day
+   64  git log --author='Karen Gallardo'
+   65  git reset --so 
+   66  Karen@Karen-Laptop MINGW32 ~
+   67  $ git status
+   68  fatal: not a git repository (or any of the parent directories): .git
+   69  Karen@Karen-Laptop MINGW32 ~
+   70  $ ggit log
+   71  bash: ggit: command not found
+   72  Karen@Karen-Laptop MINGW32 ~
+   73  $ git log
+   74  fatal: not a git repository (or any of the parent directories): .git
+   75  Karen@Karen-Laptop MINGW32 ~
+   76  $ cd desktop
+   77  Karen@Karen-Laptop MINGW32 ~/desktop
+   78  $ git log
+   79  fatal: not a git repository (or any of the parent directories): .git
+   80  Karen@Karen-Laptop MINGW32 ~/desktop
+   81  $ git status
+   82  fatal: not a git repository (or any of the parent directories): .git
+   83  Karen@Karen-Laptop MINGW32 ~/desktop
+   84  $   git log --pretty=online
+   85  fatal: not a git repository (or any of the parent directories): .git
+   86  Karen@Karen-Laptop MINGW32 ~/desktop
+   87  $ cd Curso_Git/
+   88  Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+   89  $ git status
+   90  On branch master
+   91  nothing to commit, working tree clean
+   92  Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+   93  $ git log --pretty=oneline
+   94  5e0235e6e691682ab58293cb4fd096d9a72eeaa9 (HEAD -> master) Comandos da Aula 3
+   95  98771d005cff3bb1dec6e44bf32f46bbff9aee06 Adicionado participante.txt
+   96  73956d4007e4631a995e0f53d4673b032430245e Alteracion en readme
+   97  f6b78522ceb40a75e0638ee1e8ef5162f1422a88 Commit inicial
+   98  Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+   99  $ git log --stat
+  100  commit 5e0235e6e691682ab58293cb4fd096d9a72eeaa9 (HEAD -> master)
+  101  Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+  102  Date:   Mon Jun 22 18:42:41 2020 -0300
+  103      Comandos da Aula 3
+  104   Aula_3.txt | 44 ++++++++++++++++++++++++++++++++++++++++++++
+  105   1 file changed, 44 insertions(+)
+  106  commit 98771d005cff3bb1dec6e44bf32f46bbff9aee06
+  107  Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+  108  Date:   Mon Jun 22 18:39:11 2020 -0300
+  109      Adicionado participante.txt
+  110   participantes.txt | 1 +
+  111   1 file changed, 1 insertion(+)
+  112  commit 73956d4007e4631a995e0f53d4673b032430245e
+  113  Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+  114  Date:   Mon Jun 22 18:38:09 2020 -0300
+  115      Alteracion en readme
+  116   readme.md | 1 +
+  117   1 file changed, 1 insertion(+)
+  118  commit f6b78522ceb40a75e0638ee1e8ef5162f1422a88
+  119  Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+  120  Date:   Mon Jun 22 16:45:15 2020 -0300
+  121      Commit inicial
+  122   readme.md | 1 +
+  123   1 file changed, 1 insertion(+)
+  124  Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+  125  $ git log -p
+  126  commit 5e0235e6e691682ab58293cb4fd096d9a72eeaa9 (HEAD -> master)
+  127  Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+  128  Date:   Mon Jun 22 18:42:41 2020 -0300
+  129      Comandos da Aula 3
+  130  diff --git a/Aula_3.txt b/Aula_3.txt
+  131  new file mode 100644
+  132  index 0000000..fb7d35d
+  133  --- /dev/null
+  134  +++ b/Aula_3.txt
+  135  @@ -0,0 +1,44 @@
+  136  +    1  git config --global user.name "Karen Gallardo"
+  137  +    2  git config --global user.email "karen.gallardo.ochoa@gmail.com"
+  138  +    3  git config user.name
+  139  +    4  git config user.email
+  140  +    5  cd Desktop/
+  141  +    6  mkdir Curso_Git
+  142  +    7  cd Curso_Git/
+  143  +    8  git init
+  144  +    9  git status
+  145  +   10  echo "#Aprendendo usar o Git" > readme.md
+  146  +   11  git status
+  147  +   12  git add readme.md
+  148  +   13  git status
+  149  +   14  git commit -m "Commit inicial"
+  150  +   15  git status
+  151  +   16    echo "##Aula1! >> readme.md
++  echo "##Aula1!" >> readme.md
++echo "##Aula1!" >> readme.md
++echo '##Aula1' >> readme.md
++git status
++echo '##Aula1!' >> readme.md
++
++<
++
++Clear 7
++   17  echo '##Aula1' >> readme.md
++   18  git status
++   19  echo'Karen Gallardo' > participantes.txt
++   20  echo 'Karen Gallardo' > participantes.txt
++   21  git status
++   22  git add .
++   23  git status
++   24  git restore --staged participantes.txt
++   25  git status
++   26  git add participantes.txt
++   27  git status
++   28  git restore --staged .
++   29  git status
++   30  git commit -am 'Alteracion en readme'
++   31  git status
++   32  git add participantes.txt
++   33  git status
++   34  git commit -m 'Adicionado participante.txt'
++   35  history > Aula_3.txt
+
+commit 98771d005cff3bb1dec6e44bf32f46bbff9aee06
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:39:11 2020 -0300
+
+    Adicionado participante.txt
+
+diff --git a/participantes.txt b/participantes.txt
+new file mode 100644
+index 0000000..116f707
+index 0000000..116f707
+--- /dev/null
++++ b/participantes.txt
+@@ -0,0 +1 @@
++Karen Gallardo
+
+commit 73956d4007e4631a995e0f53d4673b032430245e
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:38:09 2020 -0300
+
+    Alteracion en readme
+
+diff --git a/readme.md b/readme.md
+index 613d339..87a898f 100644
+--- a/readme.md
++++ b/readme.md
+@@ -1 +1,2 @@
+ #Aprendendo usar o Git
++##Aula1
+
+commit f6b78522ceb40a75e0638ee1e8ef5162f1422a88
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 16:45:15 2020 -0300
+
+    Commit inicial
+
+diff --git a/readme.md b/readme.md
+new file mode 100644
+index 0000000..613d339
+--- /dev/null
++++ b/readme.md
+@@ -0,0 +1 @@
++#Aprendendo usar o Git
+
+Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+$ git log --pretty=oneline -2
+5e0235e6e691682ab58293cb4fd096d9a72eeaa9 (HEAD -> master) Comandos da Aula 3
+98771d005cff3bb1dec6e44bf32f46bbff9aee06 Adicionado participante.txt
+
+Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+$ git log --since=2.minutes
+
+Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+$ git log --since=1.day
+commit 5e0235e6e691682ab58293cb4fd096d9a72eeaa9 (HEAD -> master)
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:42:41 2020 -0300
+
+    Comandos da Aula 3
+
+commit 98771d005cff3bb1dec6e44bf32f46bbff9aee06
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:39:11 2020 -0300
+
+    Adicionado participante.txt
+
+commit 73956d4007e4631a995e0f53d4673b032430245e
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:38:09 2020 -0300
+
+    Alteracion en readme
+
+commit f6b78522ceb40a75e0638ee1e8ef5162f1422a88
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 16:45:15 2020 -0300
+
+    Commit inicial
+
+Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+$ git log --author='Karen Gallardo'
+commit 5e0235e6e691682ab58293cb4fd096d9a72eeaa9 (HEAD -> master)
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:42:41 2020 -0300
+
+    Comandos da Aula 3
+
+commit 98771d005cff3bb1dec6e44bf32f46bbff9aee06
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:39:11 2020 -0300
+
+    Adicionado participante.txt
+
+commit 73956d4007e4631a995e0f53d4673b032430245e
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 18:38:09 2020 -0300
+
+    Alteracion en readme
+
+commit f6b78522ceb40a75e0638ee1e8ef5162f1422a88
+Author: Karen Gallardo <karen.gallardo.ochoa@gmail.com>
+Date:   Mon Jun 22 16:45:15 2020 -0300
+
+    Commit inicial
+
+Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+$
+
+Karen@Karen-Laptop MINGW32 ~/desktop/Curso_Git (master)
+$ git reset --so
+  152  git status
+  153  touch teste
+  154  git add teste
+  155  git status
+  156  git reset --soft HEAD~
+  157  git log
+  158  git reset --hard
+  159  git reset --hard~
+  160  git reset --HARD~
+  161  git reset --HEAD~
+  162  git log --pretty=oneline
+  163  git checkout HEAD~~
+  164  git status
+  165  git log
+  166  ls
+  167  git checkout master
+  168  git lo
+  169  git log
+  170  git checkout HEAD~2
+  171  git log
+  172  clear
+  173  mkdir .vscode
+  174  touch conf.txt
+  175  mv conf.txt .vscode/
+  176  cd master
+  177  cd master/
+  178  ls .vscode/
+  179  ls
+  180  ls -a
+  181  git status
+  182  echo 'vscode/' > .gitignore
+  183  git status
+  184  touch pessoal.conf
+  185  git status
+  186  echo 'pessoal.conf' >> .gitignore
+  187  git status
+  188  git add .gitignore
+  189  git commit -m 'Adicionado arquivo .gitignore'
+  190  git status
+  191  history > Aula_4.txt
