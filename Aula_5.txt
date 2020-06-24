@@ -1,0 +1,93 @@
+    1  git config --global user.name "Karen Gallardo"
+    2  git config --global user.email "karen.gallardo.ochoa@gmail.com"
+    3  git config user.name
+    4  git config user.email
+    5  cd Desktop/
+    6  mkdir Curso_Git
+    7  cd Curso_Git/
+    8  git init
+    9  git status
+   10  echo "#Aprendendo usar o Git" > readme.md
+   11  git status
+   12  git add readme.md
+   13  git status
+   14  git commit -m "Commit inicial"
+   15  git status
+   16    echo "##Aula1! >> readme.md
+   17    echo "##Aula1!" >> readme.md
+   18  echo "##Aula1!" >> readme.md
+   19  echo '##Aula1' >> readme.md
+   20  git status
+   21  echo '##Aula1!' >> readme.md
+   22  <
+   23  Clear 7
+   24  echo '##Aula1' >> readme.md
+   25  git status
+   26  echo'Karen Gallardo' > participantes.txt
+   27  echo 'Karen Gallardo' > participantes.txt
+   28  git status 
+   29  git add .
+   30  git status
+   31  git restore --staged participantes.txt
+   32  git status
+   33  git add participantes.txt
+   34  git status
+   35  git restore --staged .
+   36  git status
+   37  git commit -am 'Alteracion en readme'
+   38  git status
+   39  git add participantes.txt
+   40  git status
+   41  git commit -m 'Adicionado participante.txt'
+   42  history > Aula_3.txt
+   43  git status
+   44  git add.
+   45  git commit -m 'Comandos da Aula 3'
+   46  git commit -m 'Comandos da Aula 3'
+   47  git add .
+   48  git commit -m 'Comandos da Aula 3'
+   49  git branch
+   50  clear
+   51  cd Desktop/
+   52  cd master/
+   53  clear
+   54  cd Desktop/
+   55  clear
+   56  cd Curso_Git/
+   57  git branch
+   58  git checkout -b feature
+   59  git branch
+   60  touch Nova_feature
+   61  git status
+   62  git add Nova_feature
+   63  git commit -m 'Adicionando nova feature'
+   64  git log
+   65  git checkout master
+   66  git status
+   67  touch continuando_master
+   68  git add continuando_master
+   69  commit- 'Adicionando continuando_master'
+   70  commit -m 'Adicionando continuacao na master'
+   71  git commit -m 'Adicionando continuacao na master'
+   72  git log
+   73  git checkot -b feature2 master
+   74  git checkout master
+   75  git checkout -b feature2 master
+   76  git checkout master
+   77  git log
+   78  git branch -2 feature2
+   79  git branch -d feature2
+   80  git checkout feature2
+   81  clear
+   82  git checkout feature
+   83  git log --pretty=online --graph
+   84  git log --pretty=oneline --graph
+   85  git merge master
+   86  git log
+   87  git log --pretty=oneline --graph
+   88  git reset --hard HEAD ~
+   89  git reset --hard HEAD~
+   90  git log --pretty=oneline --graph
+   91  git rebase master
+   92  git log --pretty=oneline --graph
+   93  history > Aula_5.txt
